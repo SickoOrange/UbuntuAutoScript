@@ -98,6 +98,10 @@ sudo apt-get install gnome-session -y
 sudo apt-get install gnome-tweak-tool -y
 sudo apt-get install gnome-shell-extensions
 
+#install flameshot
+echo "install flameshot"
+sudo apt-get install flameshot
+
 # install gnome arc theme
 echo "install gnome arc theme"
 sudo add-apt-repository ppa:noobslab/themes -y
@@ -158,10 +162,7 @@ echo "#######################################################################"
 echo ""
 
 
-androidStudioLink="https://dl.google.com/dl/android/studio/ide-zips/2.3.3.0/android-studio-ide-162.4069837-linux.zip"
-intellijIdeaLink="https://download-cf.jetbrains.com/idea/ideaIU-2017.2.5.tar.gz"
-skypeLink="https://repo.skype.com/latest/skypeforlinux-64.deb"
-vsCodeLink="https://az764295.vo.msecnd.net/stable/b813d12980308015bcd2b3a2f6efa5c810c33ba5/code_1.17.2-1508162334_amd64.deb"
+vsCodeLink="https://az764295.vo.msecnd.net/stable/507ce72a4466fbb27b715c3722558bb15afa9f48/code_1.57.1-1623937013_amd64.deb"
 virtualBoxLink="http://download.virtualbox.org/virtualbox/5.2.0/virtualbox-5.2_5.2.0-118431~Ubuntu~xenial_amd64.deb"
 #osxArcCollectionThemeLink="https://github-production-release-asset-2e65be.s3.amazonaws.com/77880841/16a14c7c-45a6-11e7-81ac-28673f670d57?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20171022%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20171022T093955Z&X-Amz-Expires=300&X-Amz-Signature=98b29dcd8849047f0e774fa1dd00353c8d8c60e4927c6273aa9afba5f5e3d14b&X-Amz-SignedHeaders=host&actor_id=22359905&response-content-disposition=attachment%3B%20filename%3Dosx-arc-collection_1.4.3_amd64.deb"
 googleChromeLink="https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
@@ -176,11 +177,6 @@ cd ~/Downloads/
 sougouName="sougou.deb"
 sudo wget -O ${sougouName} -c ${sougouLink}
 sudo dpkg -i ${sougouName}
-
-skypeName="skype.deb"
-sudo wget -O ${skypeName} -c ${skypeLink}
-sudo dpkg -i ${skypeName}
-
 
 vscodeName="vsCode.deb"
 sudo wget -O ${vscodeName} -c ${vsCodeLink}
@@ -209,14 +205,6 @@ genymotionName="genymotion.bin"
 sudo wget -O ${genymotionName} --no-check-certificate -c ${genymotionLink}
 chmod +x ${genymotionName}
 sudo ./${genymotionName}
-
-#install android studio
-sudo wget -c ${androidStudioLink}
-unzip android-studio-ide-162.4069837-linux.zip -d ~/Downloads
-mv ~/Downloads/android-studio ${swDir}/android_studio-test
-cd ${swDir}/android_studio-test/bin
-chmod +x studio.sh
-./studio.sh 
 
 #install intellij
 sudo wget -c ${intellijIdeaLink}

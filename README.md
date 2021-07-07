@@ -68,19 +68,26 @@ sudo ./ setup.sh
        Unzip        -- linux解压zip压缩文件
        unrar        -- 解压rar
        jd           -- 命令行解析json工具
-       kolourpaint4 --画图工具 
+       kolourpaint4 -- 画图工具 
+       flameshot    -- 截图工具
 ```
 9. 自动下载安装常用的软件：
 ```
        Visual Studio Code
        Genymotion
-       Skype
-       Android Studio
        IntellijIDEA
  ```
 
 
 #### 最后，时间仓促，目前就想到这么多，以后有什么需要的工具还会继续更新，如果大家有什么想法或者意见可以给我留言， 或者直接在Github上fork.
+
+```
+ 07.07.2021 更新日志
+ 1. 快捷截图工具
+```
+![image](https://user-images.githubusercontent.com/21984530/124705299-06297c00-df28-11eb-8aef-4f9636b7d69f.png)
+![image](https://user-images.githubusercontent.com/21984530/124705331-14779800-df28-11eb-95e4-5adc341c26a0.png)
+
 
 ```
  23.10.2017 更新日志
